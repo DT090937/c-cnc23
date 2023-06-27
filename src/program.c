@@ -73,7 +73,7 @@ void program_free(program_t *p) {
 void program_print(program_t *p, FILE *output) {
   assert(p && output);
   block_t *b = p->first;
-  // print each block from first to last
+  // Print block from first to last
   do {
     block_print(b, output);
     b = block_next(b);
